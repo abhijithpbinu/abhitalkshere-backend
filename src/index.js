@@ -9,6 +9,7 @@ import contactRoutes from './routes/contact.js';
 import adminRoutes from './routes/admin.js';
 
 const app = express();
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 3000;
 
 // ── Security ───────────────────────────────────────────────
