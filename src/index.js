@@ -15,8 +15,7 @@ const PORT = process.env.PORT || 3000;
 app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
-    ? ['https://abhitalkshere.com', 'https://www.abhitalkshere.com']
-    : '*',
+? ['https://abhitalkshere.com', 'https://www.abhitalkshere.com', 'https://abhijithpbinu.github.io']    : '*',
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
 }));
 
